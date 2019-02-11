@@ -97,11 +97,11 @@ describe('New Feed Selection', () => {
         feedB;
 
     beforeEach((done) => {
-        loadFeed(0, () => {
+        loadFeed(0, function() {
             feedA = document.querySelector('.feed').innerHTML;
         });
 
-        loadFeed(1, () => {
+        loadFeed(1, function() {
             feedB = document.querySelector('.feed').innerHTML;
             done();
         });
